@@ -1,0 +1,3 @@
+# .gitignore
+langguessr/.env
+langguessr/.env.*
