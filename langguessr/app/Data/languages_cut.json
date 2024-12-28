@@ -1,0 +1,193 @@
+[
+
+  {
+    "language_code": "ar",
+    "language_name": "Arabic",
+    "local_name": "العربية"
+  },
+  {
+    "language_code": "bg",
+    "language_name": "Bulgarian",
+    "local_name": "Български"
+  },
+  {
+    "language_code": "ca",
+    "language_name": "Catalan",
+    "local_name": "Català"
+  },
+  {
+    "language_code": "zh-cn",
+    "language_name": "Chinese (Simplified)",
+    "local_name": "简体中文"
+  },
+  {
+    "language_code": "zh-tw",
+    "language_name": "Chinese (Traditional)",
+    "local_name": "繁體中文"
+  },
+  {
+    "language_code": "da",
+    "language_name": "Danish",
+    "local_name": "Dansk"
+  },
+  {
+    "language_code": "nl",
+    "language_name": "Dutch",
+    "local_name": "Nederlands"
+  },
+  {
+    "language_code": "en",
+    "language_name": "English",
+    "local_name": "English"
+  },
+  {
+    "language_code": "fi",
+    "language_name": "Finnish",
+    "local_name": "Suomi"
+  },
+  {
+    "language_code": "fr",
+    "language_name": "French",
+    "local_name": "Français"
+  },
+  {
+    "language_code": "de",
+    "language_name": "German",
+    "local_name": "Deutsch"
+  },
+  {
+    "language_code": "gu",
+    "language_name": "Gujarati",
+    "local_name": "ગુજરાતી"
+  },
+  {
+    "language_code": "hi",
+    "language_name": "Hindi",
+    "local_name": "हिन्दी"
+  },
+  {
+    "language_code": "hu",
+    "language_name": "Hungarian",
+    "local_name": "Magyar"
+  },
+  {
+    "language_code": "id",
+    "language_name": "Indonesian",
+    "local_name": "Bahasa Indonesia"
+  },
+  {
+    "language_code": "it",
+    "language_name": "Italian",
+    "local_name": "Italiano"
+  },
+  {
+    "language_code": "ja",
+    "language_name": "Japanese",
+    "local_name": "日本語"
+  },
+  {
+    "language_code": "ko",
+    "language_name": "Korean",
+    "local_name": "한국어"
+  },
+  {
+    "language_code": "lv",
+    "language_name": "Latvian",
+    "local_name": "Latviešu"
+  },
+  {
+    "language_code": "lt",
+    "language_name": "Lithuanian",
+    "local_name": "Lietuvių"
+  },
+  {
+    "language_code": "ml",
+    "language_name": "Malayalam",
+    "local_name": "മലയാളം"
+  },
+  {
+    "language_code": "no",
+    "language_name": "Norwegian",
+    "local_name": "Norsk"
+  },
+  {
+    "language_code": "pl",
+    "language_name": "Polish",
+    "local_name": "Polski"
+  },
+  {
+    "language_code": "pt",
+    "language_name": "Portuguese",
+    "local_name": "Português"
+  },
+  {
+    "language_code": "pa",
+    "language_name": "Punjabi",
+    "local_name": "ਪੰਜਾਬੀ"
+  },
+  {
+    "language_code": "ro",
+    "language_name": "Romanian",
+    "local_name": "Română"
+  },
+  {
+    "language_code": "ru",
+    "language_name": "Russian",
+    "local_name": "Русский"
+  },
+  {
+    "language_code": "sr",
+    "language_name": "Serbian",
+    "local_name": "Srpskohrvatski"
+  },
+  {
+    "language_code": "sk",
+    "language_name": "Slovak",
+    "local_name": "Slovenčina"
+  },
+  {
+    "language_code": "sl",
+    "language_name": "Slovenian",
+    "local_name": "Slovenščina"
+  },
+  {
+    "language_code": "es",
+    "language_name": "Spanish",
+    "local_name": "Español"
+  },
+  {
+    "language_code": "sv",
+    "language_name": "Swedish",
+    "local_name": "Svenska"
+  },
+  {
+    "language_code": "ta",
+    "language_name": "Tamil",
+    "local_name": "தமிழ்"
+  },
+  {
+    "language_code": "te",
+    "language_name": "Telugu",
+    "local_name": "తెలుగు"
+  },
+  {
+    "language_code": "th",
+    "language_name": "Thai",
+    "local_name": "ไทย"
+  },
+  {
+    "language_code": "tr",
+    "language_name": "Turkish",
+    "local_name": "Türkçe"
+  },
+  {
+    "language_code": "uk",
+    "language_name": "Ukrainian",
+    "local_name": "Українська"
+  },
+  {
+    "language_code": "vi",
+    "language_name": "Vietnamese",
+    "local_name": "Tiếng Việt"
+  }
+]

@@ -1,0 +1,712 @@
+[
+  {
+    "language_code": "af",
+    "language_name": "Afrikaans",
+    "local_name": "Afrikaans"
+  },
+  {
+    "language_code": "ak",
+    "language_name": "Akan",
+    "local_name": "Akan"
+  },
+  {
+    "language_code": "sq",
+    "language_name": "Albanian",
+    "local_name": "Shqip"
+  },
+  {
+    "language_code": "ws",
+    "language_name": "Samoa",
+    "local_name": "Gagana Samoa"
+  },
+  {
+    "language_code": "am",
+    "language_name": "Amharic",
+    "local_name": "አማርኛ"
+  },
+  {
+    "language_code": "ar",
+    "language_name": "Arabic",
+    "local_name": "العربية"
+  },
+  {
+    "language_code": "hy",
+    "language_name": "Armenian",
+    "local_name": "Հայերեն"
+  },
+  {
+    "language_code": "az",
+    "language_name": "Azerbaijani",
+    "local_name": "Azərbaycan dili"
+  },
+  {
+    "language_code": "eu",
+    "language_name": "Basque",
+    "local_name": "Euskara"
+  },
+  {
+    "language_code": "be",
+    "language_name": "Belarusian",
+    "local_name": "Беларуская"
+  },
+  {
+    "language_code": "bem",
+    "language_name": "Bemba",
+    "local_name": "Bemba"
+  },
+  {
+    "language_code": "bn",
+    "language_name": "Bengali",
+    "local_name": "বাংলা"
+  },
+  {
+    "language_code": "bh",
+    "language_name": "Bihari",
+    "local_name": "भोजपुरी"
+  },
+  {
+    "language_code": "br",
+    "language_name": "Breton",
+    "local_name": "Brezhoneg"
+  },
+  {
+    "language_code": "bg",
+    "language_name": "Bulgarian",
+    "local_name": "Български"
+  },
+  {
+    "language_code": "bt",
+    "language_name": "Bhutanese",
+    "local_name": "བོད་ཡིག"
+  },
+  {
+    "language_code": "km",
+    "language_name": "Cambodian",
+    "local_name": "ខ្មែរ"
+  },
+  {
+    "language_code": "ca",
+    "language_name": "Catalan",
+    "local_name": "Català"
+  },
+  {
+    "language_code": "chr",
+    "language_name": "Cherokee",
+    "local_name": "ᏣᎳᎩ"
+  },
+  {
+    "language_code": "ny",
+    "language_name": "Chichewa",
+    "local_name": "Chichewa"
+  },
+  {
+    "language_code": "zh-cn",
+    "language_name": "Chinese (Simplified)",
+    "local_name": "简体中文"
+  },
+  {
+    "language_code": "zh-tw",
+    "language_name": "Chinese (Traditional)",
+    "local_name": "繁體中文"
+  },
+  {
+    "language_code": "co",
+    "language_name": "Corsican",
+    "local_name": "Corsu"
+  },
+  {
+    "language_code": "cs",
+    "language_name": "Czech",
+    "local_name": "Čeština"
+  },
+  {
+    "language_code": "da",
+    "language_name": "Danish",
+    "local_name": "Dansk"
+  },
+  {
+    "language_code": "nl",
+    "language_name": "Dutch",
+    "local_name": "Nederlands"
+  },
+  {
+    "language_code": "en",
+    "language_name": "English",
+    "local_name": "English"
+  },
+  {
+    "language_code": "eo",
+    "language_name": "Esperanto",
+    "local_name": "Esperanto"
+  },
+  {
+    "language_code": "et",
+    "language_name": "Estonian",
+    "local_name": "Eesti keel"
+  },
+  {
+    "language_code": "ee",
+    "language_name": "Ewe",
+    "local_name": "Eʋegbe"
+  },
+  {
+    "language_code": "fo",
+    "language_name": "Faroese",
+    "local_name": "Føroyskt"
+  },
+  {
+    "language_code": "tl",
+    "language_name": "Filipino",
+    "local_name": "Filipino"
+  },
+  {
+    "language_code": "fi",
+    "language_name": "Finnish",
+    "local_name": "Suomi"
+  },
+  {
+    "language_code": "fr",
+    "language_name": "French",
+    "local_name": "Français"
+  },
+  {
+    "language_code": "fy",
+    "language_name": "Frisian",
+    "local_name": "Frysk"
+  },
+  {
+    "language_code": "gaa",
+    "language_name": "Ga",
+    "local_name": "Ga"
+  },
+  {
+    "language_code": "gl",
+    "language_name": "Galician",
+    "local_name": "Galego"
+  },
+  {
+    "language_code": "ka",
+    "language_name": "Georgian",
+    "local_name": "ქართული"
+  },
+  {
+    "language_code": "de",
+    "language_name": "German",
+    "local_name": "Deutsch"
+  },
+  {
+    "language_code": "el",
+    "language_name": "Greek",
+    "local_name": "Ελληνικά"
+  },
+  {
+    "language_code": "kl",
+    "language_name": "Greenlandic",
+    "local_name": "Kalaallisut"
+  },
+  {
+    "language_code": "gn",
+    "language_name": "Guarani",
+    "local_name": "Añañe'ẽ"
+  },
+  {
+    "language_code": "gu",
+    "language_name": "Gujarati",
+    "local_name": "ગુજરાતી"
+  },
+  {
+    "language_code": "ht",
+    "language_name": "Haitian Creole",
+    "local_name": "Kreyòl Ayisyen"
+  },
+  {
+    "language_code": "ha",
+    "language_name": "Hausa",
+    "local_name": "Hausa"
+  },
+  {
+    "language_code": "haw",
+    "language_name": "Hawaiian",
+    "local_name": "ʻŌlelo Hawaiʻi"
+  },
+  {
+    "language_code": "iw",
+    "language_name": "Hebrew",
+    "local_name": "עברית"
+  },
+  {
+    "language_code": "he",
+    "language_name": "Hebrew",
+    "local_name": "עברית"
+  },
+  {
+    "language_code": "hi",
+    "language_name": "Hindi",
+    "local_name": "हिन्दी"
+  },
+  {
+    "language_code": "hu",
+    "language_name": "Hungarian",
+    "local_name": "Magyar"
+  },
+  {
+    "language_code": "is",
+    "language_name": "Icelandic",
+    "local_name": "Íslenska"
+  },
+  {
+    "language_code": "ig",
+    "language_name": "Igbo",
+    "local_name": "Igbo"
+  },
+  {
+    "language_code": "id",
+    "language_name": "Indonesian",
+    "local_name": "Bahasa Indonesia"
+  },
+  {
+    "language_code": "ia",
+    "language_name": "Interlingua",
+    "local_name": "Interlingua"
+  },
+  {
+    "language_code": "ga",
+    "language_name": "Irish",
+    "local_name": "Gaeilge"
+  },
+  {
+    "language_code": "it",
+    "language_name": "Italian",
+    "local_name": "Italiano"
+  },
+  {
+    "language_code": "ja",
+    "language_name": "Japanese",
+    "local_name": "日本語"
+  },
+  {
+    "language_code": "jw",
+    "language_name": "Javanese",
+    "local_name": "ꦧꦱꦗꦮ"
+  },
+  {
+    "language_code": "kn",
+    "language_name": "Kannada",
+    "local_name": "ಕನ್ನಡ"
+  },
+  {
+    "language_code": "kk",
+    "language_name": "Kazakh",
+    "local_name": "Қазақ тілі"
+  },
+  {
+    "language_code": "rw",
+    "language_name": "Kinyarwanda",
+    "local_name": "Ikinyarwanda"
+  },
+  {
+    "language_code": "kg",
+    "language_name": "Kongo",
+    "local_name": "Kongo"
+  },
+  {
+    "language_code": "ko",
+    "language_name": "Korean",
+    "local_name": "한국어"
+  },
+  {
+    "language_code": "kri",
+    "language_name": "Krio (Sierra Leone)",
+    "local_name": "Krio"
+  },
+  {
+    "language_code": "ku",
+    "language_name": "Kurdish",
+    "local_name": "Kurdî"
+  },
+  {
+    "language_code": "ckb",
+    "language_name": "Kurdish (Soranî)",
+    "local_name": "Kurdî (Soranî)"
+  },
+  {
+    "language_code": "ky",
+    "language_name": "Kyrgyz",
+    "local_name": "Кыргыз тили"
+  },
+  {
+    "language_code": "lo",
+    "language_name": "Laothian",
+    "local_name": "ລາວ"
+  },
+  {
+    "language_code": "la",
+    "language_name": "Latin",
+    "local_name": "Latina"
+  },
+  {
+    "language_code": "lv",
+    "language_name": "Latvian",
+    "local_name": "Latviešu"
+  },
+  {
+    "language_code": "lt",
+    "language_name": "Lithuanian",
+    "local_name": "Lietuvių"
+  },
+  {
+    "language_code": "loz",
+    "language_name": "Lozi",
+    "local_name": "Lozi"
+  },
+  {
+    "language_code": "lg",
+    "language_name": "Luganda",
+    "local_name": "Luganda"
+  },
+  {
+    "language_code": "ach",
+    "language_name": "Luo",
+    "local_name": "Luo"
+  },
+  {
+    "language_code": "mk",
+    "language_name": "Macedonian",
+    "local_name": "Македонски"
+  },
+  {
+    "language_code": "mg",
+    "language_name": "Malagasy",
+    "local_name": "Malagasy"
+  },
+  {
+    "language_code": "ms",
+    "language_name": "Malay",
+    "local_name": "Bahasa Melayu"
+  },
+  {
+    "language_code": "ml",
+    "language_name": "Malayalam",
+    "local_name": "മലയാളം"
+  },
+  {
+    "language_code": "mt",
+    "language_name": "Maltese",
+    "local_name": "Il-L-Istħarriġ"
+  },
+  {
+    "language_code": "mv",
+    "language_name": "Maldives",
+    "local_name": "Dhivehi"
+  },
+  {
+    "language_code": "mi",
+    "language_name": "Maori",
+    "local_name": "Te Reo Māori"
+  },
+  {
+    "language_code": "mr",
+    "language_name": "Marathi",
+    "local_name": "मराठी"
+  },
+  {
+    "language_code": "mfe",
+    "language_name": "Mauritian Creole",
+    "local_name": "Kreol Morisyen"
+  },
+  {
+    "language_code": "mo",
+    "language_name": "Moldavian",
+    "local_name": "Limba Moldovenească"
+  },
+  {
+    "language_code": "mn",
+    "language_name": "Mongolian",
+    "local_name": "Монгол"
+  },
+  {
+    "language_code": "my",
+    "language_name": "Myanmar",
+    "local_name": "မြန်မာ"
+  },
+  {
+    "language_code": "ne",
+    "language_name": "Nepali",
+    "local_name": "नेपाली"
+  },
+  {
+    "language_code": "pcm",
+    "language_name": "Nigerian Pidgin",
+    "local_name": "Naija"
+  },
+  {
+    "language_code": "nso",
+    "language_name": "Northern Sotho",
+    "local_name": "Sesotho sa Leboa"
+  },
+  {
+    "language_code": "no",
+    "language_name": "Norwegian",
+    "local_name": "Norsk"
+  },
+  {
+    "language_code": "oc",
+    "language_name": "Occitan",
+    "local_name": "Occitan"
+  },
+  {
+    "language_code": "or",
+    "language_name": "Oriya",
+    "local_name": "ଓଡ଼ିଆ"
+  },
+  {
+    "language_code": "om",
+    "language_name": "Oromo",
+    "local_name": "Afaan Oromoo"
+  },
+  {
+    "language_code": "ps",
+    "language_name": "Pashto",
+    "local_name": "پښتو"
+  },
+  {
+    "language_code": "fa",
+    "language_name": "Persian",
+    "local_name": "فارسی"
+  },
+  {
+    "language_code": "pl",
+    "language_name": "Polish",
+    "local_name": "Polski"
+  },
+  {
+    "language_code": "pt",
+    "language_name": "Portuguese",
+    "local_name": "Português"
+  },
+  {
+    "language_code": "pa",
+    "language_name": "Punjabi",
+    "local_name": "ਪੰਜਾਬੀ"
+  },
+  {
+    "language_code": "qu",
+    "language_name": "Quechua",
+    "local_name": "Runa Simi"
+  },
+  {
+    "language_code": "ro",
+    "language_name": "Romanian",
+    "local_name": "Română"
+  },
+  {
+    "language_code": "rm",
+    "language_name": "Romansh",
+    "local_name": "Rumantsch"
+  },
+  {
+    "language_code": "nyn",
+    "language_name": "Runyakitara",
+    "local_name": "Runyakitara"
+  },
+  {
+    "language_code": "ru",
+    "language_name": "Russian",
+    "local_name": "Русский"
+  },
+  {
+    "language_code": "gd",
+    "language_name": "Scots Gaelic",
+    "local_name": "Gàidhlig"
+  },
+  {
+    "language_code": "sr",
+    "language_name": "Serbian",
+    "local_name": "Srpskohrvatski"
+  },
+  {
+    "language_code": "st",
+    "language_name": "Sesotho",
+    "local_name": "Sesotho"
+  },
+  {
+    "language_code": "tn",
+    "language_name": "Setswana",
+    "local_name": "Setswana"
+  },
+  {
+    "language_code": "crs",
+    "language_name": "Seychellois Creole",
+    "local_name": "Kreol Seselwa"
+  },
+  {
+    "language_code": "sn",
+    "language_name": "Shona",
+    "local_name": "ChiShona"
+  },
+  {
+    "language_code": "sd",
+    "language_name": "Sindhi",
+    "local_name": "سنڌي"
+  },
+  {
+    "language_code": "si",
+    "language_name": "Sinhalese",
+    "local_name": "සිංහල"
+  },
+  {
+    "language_code": "sk",
+    "language_name": "Slovak",
+    "local_name": "Slovenčina"
+  },
+  {
+    "language_code": "sl",
+    "language_name": "Slovenian",
+    "local_name": "Slovenščina"
+  },
+  {
+    "language_code": "so",
+    "language_name": "Somali",
+    "local_name": "Af Soomaali"
+  },
+  {
+    "language_code": "es",
+    "language_name": "Spanish",
+    "local_name": "Español"
+  },
+  {
+    "language_code": "su",
+    "language_name": "Sundanese",
+    "local_name": "Basa Sunda"
+  },
+  {
+    "language_code": "sw",
+    "language_name": "Swahili",
+    "local_name": "Kiswahili"
+  },
+  {
+    "language_code": "sv",
+    "language_name": "Swedish",
+    "local_name": "Svenska"
+  },
+  {
+    "language_code": "tg",
+    "language_name": "Tajik",
+    "local_name": "Тоҷикӣ"
+  },
+  {
+    "language_code": "ta",
+    "language_name": "Tamil",
+    "local_name": "தமிழ்"
+  },
+  {
+    "language_code": "tt",
+    "language_name": "Tatar",
+    "local_name": "Татар"
+  },
+  {
+    "language_code": "te",
+    "language_name": "Telugu",
+    "local_name": "తెలుగు"
+  },
+  {
+    "language_code": "th",
+    "language_name": "Thai",
+    "local_name": "ไทย"
+  },
+  {
+    "language_code": "ti",
+    "language_name": "Tigrinya",
+    "local_name": "ትግርኛ"
+  },
+  {
+    "language_code": "to",
+    "language_name": "Tonga",
+    "local_name": "Faka Tonga"
+  },
+  {
+    "language_code": "lua",
+    "language_name": "Tshiluba",
+    "local_name": "Tshiluba"
+  },
+  {
+    "language_code": "tum",
+    "language_name": "Tumbuka",
+    "local_name": "Chitumbuka"
+  },
+  {
+    "language_code": "tr",
+    "language_name": "Turkish",
+    "local_name": "Türkçe"
+  },
+  {
+    "language_code": "tk",
+    "language_name": "Turkmen",
+    "local_name": "Türkmençe"
+  },
+  {
+    "language_code": "tw",
+    "language_name": "Twi",
+    "local_name": "Twi"
+  },
+  {
+    "language_code": "ug",
+    "language_name": "Uighur",
+    "local_name": "ئۇيغۇرچە"
+  },
+  {
+    "language_code": "uk",
+    "language_name": "Ukrainian",
+    "local_name": "Українська"
+  },
+  {
+    "language_code": "ur",
+    "language_name": "Urdu",
+    "local_name": "اردو"
+  },
+  {
+    "language_code": "uz",
+    "language_name": "Uzbek",
+    "local_name": "O'zbek"
+  },
+  {
+    "language_code": "vu",
+    "language_name": "Vanuatu",
+    "local_name": "Bislama"
+  },
+  {
+    "language_code": "vi",
+    "language_name": "Vietnamese",
+    "local_name": "Tiếng Việt"
+  },
+  {
+    "language_code": "cy",
+    "language_name": "Welsh",
+    "local_name": "Cymraeg"
+  },
+  {
+    "language_code": "wo",
+    "language_name": "Wolof",
+    "local_name": "Wolof"
+  },
+  {
+    "language_code": "xh",
+    "language_name": "Xhosa",
+    "local_name": "isiXhosa"
+  },
+  {
+    "language_code": "yi",
+    "language_name": "Yiddish",
+    "local_name": "ייִדיש"
+  },
+  {
+    "language_code": "yo",
+    "language_name": "Yoruba",
+    "local_name": "Yorùbá"
+  },
+  {
+    "language_code": "zu",
+    "language_name": "Zulu",
+    "local_name": "Zulu"
+  }
+]

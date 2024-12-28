@@ -1,0 +1,137 @@
+{
+  "news_results": [
+    {
+      "position": 1,
+      "highlight": {
+        "title": "Venäjän varjolaivastoon kuuluva öljytankkeri jäi kiinni ilman ankkuria – näin viranomaiset ottivat laivan haltuun yöllä",
+        "source": {
+          "name": "Kaleva.fi",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.kaleva.fi&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://www.kaleva.fi/venajan-varjolaivastoon-kuuluva-oljytankkeri-jai-k/11459062",
+        "thumbnail": "https://kuvat.kaleva.media/images/v1/kalevacdn/F5_qkyrKw4RKvOKdZFv0LnpGQvNfkgzZ_ZRuVG5HMy9AvkUdWYxZ1rUZ2BqSZ9zTELfIzcsxRRBvnfpjqJ_ySXqgUWaj7-wW4D185EAUfAULf58BwdLPsXEmzilmF3g1hEIIYs8bLq7MmK2znqxe19dmZ7MOIV1i9QWd8qtAxA.jpg?format=jpeg&quality=70&width=1290",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTNaazV2TkhVMlJFY3RkR1JsVFJDb0FSaXJBaWdCTWdhQmNJSzEyQUk",
+        "date": "12/26/2024, 12:34 PM, +0000 UTC"
+      },
+      "stories": [
+        {
+          "position": 1,
+          "title": "Nyt kommentoi Naton pomo",
+          "source": {
+            "name": "Iltalehti",
+            "icon": "https://lh3.googleusercontent.com/OBBRE8mhcXc_t7PVdtq2ekelh4OPgPCnM84HD1yUvR7JgcMpQtYkBCYe0yEH3GELk2IBi2RUbw"
+          },
+          "link": "https://www.iltalehti.fi/ulkomaat/a/f27bcd43-8679-4b90-8869-27b0eef99881",
+          "thumbnail": "https://img.ilcdn.fi/LkrKKchZo0uzeab-h4ksmW6M4yQ=/full-fit-in/920x0/img-s3.ilcdn.fi/a774c3246988efa718a1b80c326afaf81bc425d7734d3c3657c7e86354154f40.jpg",
+          "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5SMmxrVUV4c09YUnZNbXB3VFJDM0FSaVRBaWdCTWdZbFZKVE5JUWc",
+          "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pFbmUzN0RCSHZ1YlNJYTg0clhTZ0FQAQ",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pFbmUzN0RCSHZ1YlNJYTg0clhTZ0FQAQ",
+          "date": "12/25/2024, 09:56 PM, +0000 UTC"
+        },
+        {
+          "position": 2,
+          "title": "Nato tarjoaa apua Suomelle – poliisi julkaisi kuvia Eagle S -aluksesta",
+          "source": {
+            "name": "YLE",
+            "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://yle.fi&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+          },
+          "link": "https://yle.fi/a/74-20133526",
+          "thumbnail": "https://images.cdn.yle.fi/image/upload/c_crop,h_864,w_1536,x_0,y_407/ar_1.7777777777777777,c_fill,g_faces,h_431,w_767/dpr_2.0/q_auto:eco/f_auto/fl_lossy/v1735231527/39-1400171676d876445bf0",
+          "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNHhUREpOYkVwdFVrSlNYMFp3VFJDZkF4ampCU2dLTWdB",
+          "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pFbmUzN0RCSHZ1YlNJYTg0clhTZ0FQAQ",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pFbmUzN0RCSHZ1YlNJYTg0clhTZ0FQAQ",
+          "date": "12/26/2024, 11:38 AM, +0000 UTC"
+        }
+      ],
+      "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pFbmUzN0RCSHZ1YlNJYTg0clhTZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pFbmUzN0RCSHZ1YlNJYTg0clhTZ0FQAQ"
+    },
+    {
+      "position": 2,
+      "highlight": {
+        "title": "Turussa joulurauhan aikaan kaksi epäiltyä tapon yritystä",
+        "source": {
+          "name": "YLE",
+          "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://yle.fi&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://yle.fi/a/74-20133510",
+        "date": "12/26/2024, 09:02 AM, +0000 UTC"
+      },
+      "stories": [
+        {
+          "position": 1,
+          "title": "Joulun nurja puoli: Monissa perheissä riita kärjistyy alkoholin siivittämänä niin, että tilanteessa tarvitaan poliisia",
+          "source": {
+            "name": "Kaleva.fi",
+            "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.kaleva.fi&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+          },
+          "link": "https://www.kaleva.fi/joulun-nurja-puoli-monissa-perheissa-riita-karjist/11458807",
+          "thumbnail": "https://kuvat.kaleva.media/images/v1/kalevacdn/zdAhIlPd-jEw-HVhyAkLpXRgkCUzV3w5QM2njULSobYwQFABPSjMkFIbCbTxkaF3SttsBUs7jeXbtdMnG-MqFqN5S2g_0CQVOnMCpYp8AMFdqBW_CPh9g5pnwfleBH5FFiGTNZ1qi4w8BkJTOy8WXZgMsxcChM8-iH98W2HfWw.jpg?format=jpeg&quality=70&width=1290",
+          "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNURYelJtVHpGZmVqazVhVGszVFJDdkFSaWdBaWdCTWdhWnNZaUtTUU0",
+          "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pjdzRuN0RCRnZxVU43bXpybFZpZ0FQAQ",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pjdzRuN0RCRnZxVU43bXpybFZpZ0FQAQ",
+          "date": "12/25/2024, 08:42 PM, +0000 UTC"
+        },
+        {
+          "position": 2,
+          "title": "Kotihälytykset liikuttivat poliisia jouluna Kaakkois-Suomessa – Tapaninpäivän paluuliikenteen odotetaan jatkuvan iltaan asti",
+          "source": {
+            "name": "Kouvolan Sanomat",
+            "icon": "https://lh3.googleusercontent.com/DWpzK5OQzAuDD_VfMNkPaB29PrOHXieiBH00RzkO-WjnWVK_ze0VmNL2PCsq2f41gGe07jlc"
+          },
+          "link": "https://www.kouvolansanomat.fi/paikalliset/8170666",
+          "thumbnail": "https://i.media.fi/incoming/hfslmn/8896351.jpg/alternates/FREE_1440/8896351.jpg?gsid=b452b6a0-ad20-4f88-9612-e638e15e560f",
+          "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUxiakp0WDNBeFdWQllPSFJ3VFJDM0FSaVRBaWdCTWdZTk1JeVZuQWs",
+          "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pjdzRuN0RCRnZxVU43bXpybFZpZ0FQAQ",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pjdzRuN0RCRnZxVU43bXpybFZpZ0FQAQ",
+          "date": "12/26/2024, 10:27 AM, +0000 UTC"
+        },
+        {
+          "position": 3,
+          "title": "Poliisi summasi joulun: Pernossa erittäin vakava väkivallanteko",
+          "source": {
+            "name": "Turun Sanomat",
+            "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.ts.fi&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+          },
+          "link": "https://www.ts.fi/uutiset/6526806",
+          "thumbnail": "https://www.ts.fi/static/content/pic_5_6526806_k10392251_1200.jpg",
+          "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNhVzVWVjJaSFpscHFRVVV6VFJDM0FSaVRBaWdCTWdhbE5JeXVJUWM",
+          "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pjdzRuN0RCRnZxVU43bXpybFZpZ0FQAQ",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pjdzRuN0RCRnZxVU43bXpybFZpZ0FQAQ",
+          "date": "12/26/2024, 12:22 PM, +0000 UTC"
+        }
+      ],
+      "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pjdzRuN0RCRnZxVU43bXpybFZpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pjdzRuN0RCRnZxVU43bXpybFZpZ0FQAQ"
+    },
+    {
+      "position": 3,
+      "title": "Pääkirjoitus Suomalaisille tapahtui jotain käsittämätöntä – Vielä pahempi katastrofi voi olla vain ajan kysymys",
+      "source": {
+        "name": "Iltalehti",
+        "icon": "https://lh3.googleusercontent.com/OBBRE8mhcXc_t7PVdtq2ekelh4OPgPCnM84HD1yUvR7JgcMpQtYkBCYe0yEH3GELk2IBi2RUbw"
+      },
+      "link": "https://www.iltalehti.fi/paakirjoitus/a/8c82b2c8-f494-45a0-a453-fc00a9cd7aac",
+      "thumbnail": "https://img.ilcdn.fi/G3Tly_rLzlcSwG0ByaanFBHRSnc=/full-fit-in/920x0/img-s3.ilcdn.fi/c8577f610189545b9e2647c53c4876eb1cc052d9e2fb9eac0fe68cd402343671.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNXNWVFUyTm1oTWVubHZWVEl3VFJDX0FSaUlBaWdCTWdB",
+      "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lPc2JQNURCRzZHRDRXQXd3YmFpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lPc2JQNURCRzZHRDRXQXd3YmFpZ0FQAQ",
+      "date": "12/26/2024, 05:45 PM, +0000 UTC"
+    },
+    {
+      "position": 4,
+      "title": "Venäjä tuomitsi \"spekuloimisen\" Kazakstanin lentoturman syistä – Venäjän ilmapuolustus saattoi pudottaa koneen, arvelevat useat asiantuntijat",
+      "source": {
+        "name": "Etelä-Suomen Sanomat",
+        "icon": "https://lh3.googleusercontent.com/fmQU_LepZOr_45mF3ExxoWI7XN7V0Zhw6ClBt80HX6MVN4AuA-l7UX2EfuJaIEccYaGGfQfM",
+        "authors": ["Ayla Albayrak"]
+      },
+      "link": "https://www.ess.fi/uutissuomalainen/8170555",
+      "thumbnail": "https://i.media.fi/incoming/rylrl6/10554622.jpg/alternates/FREE_960/10554622.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNVNSelV4ZDNGTFNYRTNhelZ1VFJDM0FSaVRBaWdCTWdB",
+      "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pnamRqN0RCR0lwTE9WdlFHc1BDZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pnamRqN0RCR0lwTE9WdlFHc1BDZ0FQAQ",
+      "date": "12/26/2024, 07:43 AM, +0000 UTC"
+    }
+  ]
+}

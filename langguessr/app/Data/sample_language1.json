@@ -1,0 +1,111 @@
+{
+  "news_results": [
+    {
+      "position": 1,
+      "highlight": {
+        "title": "羽田航空機衝突事故 海保機の機長“ナンバーワンで許可認識”",
+        "source": {
+          "name": "nhk.or.jp",
+          "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www3.nhk.or.jp&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://www3.nhk.or.jp/news/html/20241225/k10014678231000.html",
+        "thumbnail": "https://www3.nhk.or.jp/news/html/20241225/K10014678231_2412250940_1225100902_01_02.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVBRbmh0TkVKTWEybFhYMFZrVFJDZkF4ampCU2dLTWdZQkVJUUd0UVE",
+        "date": "12/25/2024, 02:59 AM, +0000 UTC"
+      },
+      "stories": [
+        {
+          "position": 1,
+          "title": "事故15秒前、海保機に気づいた管制官「JAL機はどうなっている」",
+          "source": {
+            "name": "朝日新聞デジタル",
+            "icon": "https://lh3.googleusercontent.com/zot0DFQGusv-IqbamEqWwJLgCG5rmeOZ-mNj6N3Hpg65fwEJNLJIE7JZpbnwlM1yFP-YXqLYBQ"
+          },
+          "link": "https://www.asahi.com/articles/ASSDS3SPTSDSUTIL00PM.html",
+          "thumbnail": "https://www.asahicom.jp/imgopt/img/c8a073ae39/comm/AS20241224003142.jpg",
+          "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNWthazFXVWxCR1puWXhTWE5sVFJDcUFSaW9BaWdCTWdrSkFvUm4xcUo2cGdJ",
+          "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lEeWZUekRCRkdyN28temlxaUxTZ0FQAQ",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lEeWZUekRCRkdyN28temlxaUxTZ0FQAQ",
+          "date": "12/25/2024, 03:00 AM, +0000 UTC"
+        },
+        {
+          "position": 2,
+          "title": "日航機操縦室内では衝撃音の後「小型機いましたね」…羽田空港衝突事故・ＣＶＲの記録から",
+          "source": {
+            "name": "読売新聞オンライン",
+            "icon": "https://lh3.googleusercontent.com/EmgIY0iLztM-fCHsqkI1FSmiO3xtwTNliggcN7h5kR-e4QblvC4yvyrUsidnONenztQIEikFhwM"
+          },
+          "link": "https://www.yomiuri.co.jp/national/20241225-OYT1T50045/",
+          "thumbnail": "https://www.yomiuri.co.jp/media/2024/12/20241225-OYT1I50051-1.jpg?type=large",
+          "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXBZMHBGU0Zwd1dHczJSRVpMVFJDUUF4aXBCU2dLTWdZSmdZYnRVUVU",
+          "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lEeWZUekRCRkdyN28temlxaUxTZ0FQAQ",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lEeWZUekRCRkdyN28temlxaUxTZ0FQAQ",
+          "date": "12/25/2024, 02:30 AM, +0000 UTC"
+        }
+      ],
+      "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lEeWZUekRCRkdyN28temlxaUxTZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lEeWZUekRCRkdyN28temlxaUxTZ0FQAQ"
+    },
+    {
+      "position": 2,
+      "highlight": {
+        "title": "【速報】斎藤知事が最後の証人尋問へ ”告発文問題”調査の百条委始まる 傍聴に100人超の長蛇の列",
+        "source": {
+          "name": "日テレNEWS",
+          "icon": "https://lh3.googleusercontent.com/Jx8m-4IkMqb7z6NOkkLQerGGlPhWAE0bz9YUcxklhSprmbyKsBR-Rt6pYFVzpB1XgxOx51pMQQ"
+        },
+        "link": "https://news.ntv.co.jp/n/ytv/category/society/ytacaf01e184f0411b948944208ad5914d",
+        "thumbnail": "https://image.gallery.play.jp/ytv-news/articles/15868b3677b5487db8635bd2f6142ad9/09a366e2-b627-4ba1-a7df-92c185a9e4e3.jpg?w=1200",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNURkRmxmZUdsekxXNXlkVUpzVFJDb0FSaXNBaWdCTWdZcFZwVHRKUWc",
+        "date": "12/25/2024, 12:53 AM, +0000 UTC"
+      },
+      "stories": [
+        {
+          "position": 1,
+          "title": "「なぜあなたは斎藤元彦・兵庫県知事を支持するのか？」失職した斎藤氏を応援する人に聞いた",
+          "source": {
+            "name": "JBpress",
+            "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://jbpress.ismedia.jp&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+          },
+          "authors": ["松本創"],
+          "link": "https://jbpress.ismedia.jp/articles/-/85614?page=3",
+          "thumbnail": "https://jbpress.ismcdn.jp/mwimgs/b/5/1200mw/img_b543e6c19b4516b555be3a49d55f73df2724826.jpg",
+          "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHhOM05xUjJveFRWbHNRM0YyVFJEZ0F4aUFCU2dLTWdZdEk0eE9sUWs",
+          "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2l0ajRQM0RCR3RselBZVkxUdzZpZ0FQAQ",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2l0ajRQM0RCR3RselBZVkxUdzZpZ0FQAQ",
+          "date": "12/24/2024, 09:00 PM, +0000 UTC"
+        },
+        {
+          "position": 2,
+          "title": "斎藤知事パワハラ疑惑の百条委、25日に総括質疑 注目ポイントは？",
+          "source": {
+            "name": "毎日新聞",
+            "icon": "https://lh3.googleusercontent.com/uDF0PK6fQUXjXq978jK27DGErqJCpL1N7Nopt-cdN2Dp9QHJXTkFM3nB0yJa9v9g727NMc7S2w"
+          },
+          "link": "https://mainichi.jp/articles/20241224/k00/00m/040/304000c",
+          "thumbnail": "https://cdn.mainichi.jp/vol1/2022/01/07/20220107k0000m040089000p/9.jpg?2",
+          "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdRa3RTTVVwRFlTMWtPV1JuVFJEWUF4aUtCU2dLTWdhcFpaTE5xUWM",
+          "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2l0ajRQM0RCR3RselBZVkxUdzZpZ0FQAQ",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2l0ajRQM0RCR3RselBZVkxUdzZpZ0FQAQ",
+          "date": "12/24/2024, 08:30 PM, +0000 UTC"
+        }
+      ],
+      "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2l0ajRQM0RCR3RselBZVkxUdzZpZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2l0ajRQM0RCR3RselBZVkxUdzZpZ0FQAQ"
+    },
+    {
+      "position": 3,
+      "title": "なぜ学校は授業を減らせないのか 議論を「丸投げ」した文科省",
+      "source": {
+        "name": "毎日新聞",
+        "icon": "https://lh3.googleusercontent.com/uDF0PK6fQUXjXq978jK27DGErqJCpL1N7Nopt-cdN2Dp9QHJXTkFM3nB0yJa9v9g727NMc7S2w"
+      },
+      "link": "https://mainichi.jp/articles/20241225/k00/00m/040/002000c",
+      "thumbnail": "https://cdn.mainichi.jp/vol1/2024/12/25/20241225k0000m040064000p/9.jpg?1",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDBTbWxTTjJodlUybFFNMmx0VFJERUF4aW5CU2dLTWdZQmhJWkhzZ1k",
+      "story_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pGbGZmNkRCRUhDdDNCTkU2dWZDZ0FQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&story_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pGbGZmNkRCRUhDdDNCTkU2dWZDZ0FQAQ",
+      "date": "12/25/2024, 01:01 AM, +0000 UTC"
+    }
+  ]
+}
