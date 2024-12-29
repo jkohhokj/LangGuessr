@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import wiki_topics from "@/app/Data/wiki_topics_with_300_languages.json";
 
 
-export function getRandomTopic() {
+function getRandomTopic() {
   const randomIndex = Math.floor(Math.random() * wiki_topics.length);
   return wiki_topics[randomIndex];
 }
@@ -21,7 +21,7 @@ export async function GET(request: Request) {
   const data = await response.json();
   const firstPageId = await data.query.search[0]?.pageid;
 
-  // // Fetch the page extract using the page ID
+  // Fetch the page extract using the page ID
   const response2 = await fetch(
     `https://${language_code}.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&&pageids=${firstPageId}&format=json`
   );
