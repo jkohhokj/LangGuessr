@@ -16,11 +16,6 @@ interface Language {
   local_name: string;
 }
 
-const japanese: Language = {
-  language_code: "ja",
-  language_name: "Japanese",
-  local_name: "日本語",
-};
 
 
 
