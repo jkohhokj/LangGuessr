@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "langguessr-frontend", 
+      "src": "langguessr-frontend/package.json", 
       "use": "@vercel/next"
     }
   ]
