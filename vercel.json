@@ -1,8 +1,8 @@
 {
   "builds": [
     {
-      "src": "nextjs-app", 
-      "use": "@vercel/next" 
+      "src": "langguessr-frontend", 
+      "use": "@vercel/next"
     }
   ]
 }
