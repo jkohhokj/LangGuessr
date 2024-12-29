@@ -1,24 +1,8 @@
 "use client";
-import dotenv from "dotenv";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect} from "react";
 import Link from "next/link";
 import { getRandomWikiLanguage } from "@/app/languages";
-import {
-  NewsResult,
-  fetchNewsData,
-  languageTextComponent,
-} from "@/app/google_news";
-import sample_language1 from "@/app/Data/sample_language1.json";
-import languages from "@/app/Data/languages.json";
-interface QuizQuestion {
-  option_one: string;
-  option_two: string;
-  option_three: string;
-  option_four: string;
-  question: string;
-  correct_option: string;
-}
 
 interface Language {
   language_code: string;
@@ -52,10 +36,6 @@ const getRandomChoices = (lang: Language) => {
   return optionChoices;
 };
 
-interface SearchResult {
-  title: string;
-  snippet: string;
-}
 
 const Home = () => {
   const [isQuestionAnswered, setIsQuestionAnswered] = useState(false);

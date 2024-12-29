@@ -30,7 +30,7 @@ export async function GET(request: Request) {
   }
   const data2 = await response2.json();
   console.log(data2);
-  var extract = data2["query"]["pages"][firstPageId]["extract"];
+  let extract = data2["query"]["pages"][firstPageId]["extract"];
   const removeSpecialCharacters = (str: string) => {
     return str.replace(/[\r\t\n=]+/g, "=").replace(/=+/g, "=");
   };

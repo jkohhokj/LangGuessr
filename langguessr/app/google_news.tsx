@@ -65,7 +65,7 @@ export const languageTextComponent = (newsResults: NewsResult[]) => {
 
           // Extract titles from stories
           if (news.stories) {
-            news.stories.forEach((story: { title: any }) => {
+            news.stories.forEach((story: { title: string }) => {
               if (story.title) {
                 titles.push(story.title);
               }

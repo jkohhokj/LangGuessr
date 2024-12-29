@@ -1,24 +1,14 @@
 "use client";
-import dotenv from 'dotenv';
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import {getRandomGoogleLanguage} from "@/app/languages";
+import sample_language1 from "@/app/Data/sample_language1.json";
 import {
   NewsResult,
-  fetchNewsData,
+  // fetchNewsData,
   languageTextComponent,
 } from "@/app/google_news";
-import sample_language1 from "@/app/Data/sample_language1.json";
-import languages from "@/app/Data/languages.json";
-interface QuizQuestion {
-  option_one: string;
-  option_two: string;
-  option_three: string;
-  option_four: string;
-  question: string;
-  correct_option: string;
-}
 
 interface Language {
   language_code: string;
@@ -82,11 +72,11 @@ const Home = () => {
     const fetchData = async () => {
       try {
         setIsLoading(true);
-        const newsData = await fetchNewsData(
-          answerLanguage.language_code,
-        );
-        setNewsResults(newsData);
-        // setNewsResults(sample_language1); // ENABLE TO SAVE API CALLS
+        // const newsData = await fetchNewsData(
+        //   answerLanguage.language_code,
+        // );
+        // setNewsResults(newsData);
+        setNewsResults(sample_language1); // ENABLE TO SAVE API CALLS
       } catch (error) {
         console.error("Error fetching news:", error);
       } finally {

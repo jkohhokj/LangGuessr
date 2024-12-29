@@ -1,12 +1,9 @@
 import Image from "next/image";
 import {getRandomGoogleLanguage} from "./languages";
 import sample_language1 from "@/app/Data/sample_language1.json";
-import sample_language2 from "@/app/Data/sample_language2.json";
-import { NewsResult, fetchNewsData } from "./google_news";
+import { NewsResult} from "./google_news";
 
 const Home = async () => {
-  const apiKey =
-    "a903fb76c4c817cd8aaa24fecd9596d6449238ae73d5f899f36c01e4eef3b4d9"; // Use your actual API key here
 
   const randomLanguage = getRandomGoogleLanguage();
 
