@@ -8,5 +8,8 @@ Another version is WIP and will cover over 300 languages with different levels o
 
 Here are some resources to help you get started:
 
+- [Beginner's Article](https://theweek.com/articles/617776/how-identify-language-glance)
+- [Example Texts](https://www.languageline.com/hubfs/LanguageLine_Collateral/Language_ID_Guide.pdf)
+- [Reddit Shitpost](https://www.reddit.com/r/france/comments/l9a92r/quelle_langue_suisje_en_train_de_lire/#lightbox)
 
 Good luck and have fun! - Jayden
