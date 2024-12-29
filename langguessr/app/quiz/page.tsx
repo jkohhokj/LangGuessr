@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import getRandomLanguage from "@/app/languages";
+import {getRandomGoogleLanguage} from "@/app/languages";
 import {
   NewsResult,
   fetchNewsData,
@@ -37,7 +37,7 @@ const japanese: Language = {
 const getRandomChoices = (lang: Language) => {
   const tempChoices: string[] = [];
   while (tempChoices.length < 5) {
-    const selectedLanguage = getRandomLanguage();
+    const selectedLanguage = getRandomGoogleLanguage();
     if (selectedLanguage.language_code !== lang.language_code) {
       tempChoices.push(selectedLanguage.language_name);
     }
@@ -59,7 +59,7 @@ const Home = () => {
   const [questionNumber, setQuestionNumber] = useState(0);
   const [totalScore, setTotalScore] = useState(0);
   const [optionChoices, setOptionChoices] = useState<string[]>([]);
-  const [answerLanguage, setAnswerLanguage] = useState(getRandomLanguage());
+  const [answerLanguage, setAnswerLanguage] = useState(getRandomGoogleLanguage());
   const [isLoading, setIsLoading] = useState<boolean>(true); // buffering state when API is slow
   const [newsResults, setNewsResults] = useState<{
     news_results: NewsResult[];
@@ -73,7 +73,7 @@ const Home = () => {
 
   // change language when question number increases
   useEffect(() => {
-    const random = getRandomLanguage();
+    const random = getRandomGoogleLanguage();
     setAnswerLanguage(random);
   }, [questionNumber]);
 
