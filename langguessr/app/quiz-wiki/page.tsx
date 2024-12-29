@@ -1,9 +1,9 @@
 "use client";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import {getRandomGoogleLanguage} from "@/app/languages";
+import { getRandomWikiLanguage } from "@/app/languages";
 import {
   NewsResult,
   fetchNewsData,
@@ -23,23 +23,25 @@ interface QuizQuestion {
 interface Language {
   language_code: string;
   language_name: string;
-  local_name: string;
 }
 
 const japanese: Language = {
   language_code: "ja",
   language_name: "Japanese",
-  local_name: "日本語",
 };
-
-
 
 const getRandomChoices = (lang: Language) => {
   const tempChoices: string[] = [];
+  const seenLanguages = new Set<string>();
+
   while (tempChoices.length < 5) {
-    const selectedLanguage = getRandomGoogleLanguage();
-    if (selectedLanguage.language_code !== lang.language_code) {
+    const selectedLanguage = getRandomWikiLanguage();
+    if (
+      selectedLanguage.language_code !== lang.language_code &&
+      !seenLanguages.has(selectedLanguage.language_name)
+    ) {
       tempChoices.push(selectedLanguage.language_name);
+      seenLanguages.add(selectedLanguage.language_name);
     }
   }
 
@@ -50,56 +52,60 @@ const getRandomChoices = (lang: Language) => {
   return optionChoices;
 };
 
-
+interface SearchResult {
+  title: string;
+  snippet: string;
+}
 
 const Home = () => {
   const [isQuestionAnswered, setIsQuestionAnswered] = useState(false);
   const [quizEnded, setQuizEnded] = useState(false);
   const [questionLength, setQuestionLength] = useState(0);
-  const [questionNumber, setQuestionNumber] = useState(0);
+  const [questionNumber, setQuestionNumber] = useState(-1);
   const [totalScore, setTotalScore] = useState(0);
   const [optionChoices, setOptionChoices] = useState<string[]>([]);
-  const [answerLanguage, setAnswerLanguage] = useState(getRandomGoogleLanguage());
+  const [answerLanguage, setAnswerLanguage] = useState(japanese);
   const [isLoading, setIsLoading] = useState<boolean>(true); // buffering state when API is slow
-  const [newsResults, setNewsResults] = useState<{
-    news_results: NewsResult[];
-  }>({ news_results: [] });
+  const [str, setStr] = useState(`gay`);
   const [selectedChoiceIndex, setSelectedChoiceIndex] = useState(0);
 
   // initialize on page load
   useEffect(() => {
     setQuestionLength(3); // number of questions
+    setQuestionNumber(0);
   }, []);
 
   // change language when question number increases
   useEffect(() => {
-    const random = getRandomGoogleLanguage();
-    setAnswerLanguage(random);
+    if (questionNumber >= 0) {
+      const random = getRandomWikiLanguage();
+      setAnswerLanguage(random);
+    }
   }, [questionNumber]);
 
-  // fetch news data when language changes
+  // change answer choices when answerLanguage changes
   useEffect(() => {
     const fetchData = async () => {
       try {
         setIsLoading(true);
-        const newsData = await fetchNewsData(
-          answerLanguage.language_code,
+        const response = await fetch(
+          `/api/wiki?language_code=${answerLanguage.language_code}`
         );
-        setNewsResults(newsData);
-        // setNewsResults(sample_language1); // ENABLE TO SAVE API CALLS
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        setStr(await response.text());
       } catch (error) {
         console.error("Error fetching news:", error);
       } finally {
         setIsLoading(false);
       }
     };
-    fetchData();
-  }, [answerLanguage]);
-
-  // change answer choices when answerLanguage changes
-  useEffect(() => {
-    const newChoices = getRandomChoices(answerLanguage);
-    setOptionChoices(newChoices);
+    if (questionNumber >= 0) {
+      fetchData();
+      const newChoices = getRandomChoices(answerLanguage);
+      setOptionChoices(newChoices);
+    }
   }, [answerLanguage]);
 
   const handleChoice = (choiceIndex: number) => {
@@ -134,11 +140,19 @@ const Home = () => {
                   )}
                 </div>
                 <div>
-                  <div>
-                    {isLoading
-                      ? "Loading..."
-                      : languageTextComponent(newsResults["news_results"])}
-                  </div>
+                  {!isLoading ? (
+                    <div>
+                      
+                      {str.split("=").map((line, index) => (
+                        <p key={index}>
+                          {line}
+                          <br />
+                        </p>
+                      ))}
+                    </div>
+                  ) : (
+                    <div>Loading...</div>
+                  )}
                 </div>
                 <div className=" grid grid-cols-2 gap-8 gap-x-12 ">
                   {optionChoices.map((lang, index) => {
@@ -199,7 +213,7 @@ const Home = () => {
                   if (questionNumber + 1 === questionLength) {
                     setQuizEnded(true);
                   } else {
-                    setQuestionNumber(questionNumber + 1);
+                    setQuestionNumber(0);
                   }
                   setIsQuestionAnswered(false);
                 }}
