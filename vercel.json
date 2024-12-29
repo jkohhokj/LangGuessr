@@ -2,7 +2,6 @@
   "builds": [
     {
       "src": "nextjs-app", 
-      "dest": "nextjs-app", 
       "use": "@vercel/next" 
     }
   ]
