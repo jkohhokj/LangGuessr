@@ -29,11 +29,6 @@ const Home = async () => {
   const props = getServerSideProps();
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <link
-        href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
-        rel="stylesheet"
-      />
-      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div>
           <h1 className="text-6xl font-extrabold leading-9 tracking-tight text-gray-300 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -49,9 +44,9 @@ const Home = async () => {
           <br />
           {(await props).props.data}
         </div>
-        <div>
+        <div className="flex justify-center">
           <Link href={`/quiz-wiki`}>
-            <button className="animate-grow-shrink text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">
+            <button className="flex justify-center animate-grow-shrink text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">
               Play the game!
             </button>
           </Link>
