@@ -181,7 +181,7 @@ const Home = () => {
         ) : (
           // end page
           <div className="w-4/5 min-h-[75%] shadow-2xl flex flex-col justify-center items-center font-medium gap-16">
-            <h1>Hurray, you have completed the quiz!</h1>
+            <h1>Hurray, you finished the game!</h1>
             <h1 className="text-2xl">
               Your score is {totalScore} out of {questionLength}
             </h1>
