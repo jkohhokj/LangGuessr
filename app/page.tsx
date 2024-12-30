@@ -10,10 +10,10 @@ const Home = async () => {
 
   const fetchData = async (lang: Language) => {
     try {
-      const baseUrl =
-        process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+      // const baseUrl =
+        // process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
       const response = await fetch(
-        `${baseUrl}/api/wiki?language_code=${lang.language_code}`
+        `/api/wiki?language_code=${lang.language_code}`
       );
       return response.text();
     } catch {
