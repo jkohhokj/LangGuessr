@@ -12,6 +12,19 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        "grow-shrink": "growShrink 5s ease-in-out infinite",
+      },
+      keyframes: {
+        growShrink: {
+          "0%, 100%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(1.5)",
+          },
+        },
+      },
     },
   },
   plugins: [],
