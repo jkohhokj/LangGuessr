@@ -9,6 +9,7 @@ function getRandomTopic() {
 
 
 export async function GET(request: Request) {
+  console.log(`received ${request}`)
   const { searchParams } = new URL(request.url); // Parse the URL
   const language_code = searchParams.get("language_code") || "en"; // Get the 'language_code' query parameter
     const randomTopic = getRandomTopic();
@@ -34,11 +35,11 @@ export async function GET(request: Request) {
   const removeSpecialCharacters = (str: string) => {
     return str.replace(/[\r\t\n=]+/g, "=").replace(/=+/g, "=");
   };
-  extract = removeSpecialCharacters(extract);
-  const truncateString = (str: string, maxLength: number) => {
-    return str.length > maxLength ? str.substring(0, maxLength) + "..." : str;
-  };
-  extract = truncateString(extract, 1000);
+  extract = await removeSpecialCharacters(extract);
+  // const truncateString = (str: string, maxLength: number) => {
+  //   return str.length > maxLength ? str.substring(0, maxLength) + "..." : str;
+  // };
+  // extract = await truncateString(extract, 1000);
 
   return NextResponse.json(extract);
 }
