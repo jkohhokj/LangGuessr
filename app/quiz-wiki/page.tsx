@@ -96,6 +96,12 @@ const Home = () => {
     }
   };
 
+  const endMessage = () => {
+    if (totalScore == questionNumber) return "Wow! You're literally perfect";
+    else if (totalScore > questionNumber / 2) return "Not bad...";
+    else return "You failed.";
+  };
+
   return (
     <div>
       <div className="min-h-screen w-full flex justify-center items-center">
@@ -120,7 +126,9 @@ const Home = () => {
             </div>
             <div className="h-screen w-full flex justify-center items-center">
               <div className="w-4/5 h-3/4 shadow-2xl flex flex-col justify-center items-center font-medium gap-16">
-                  <h1 className="text-6xl font-extrabold text-center text-gray-200">Guess The Language!</h1>
+                <h1 className="text-6xl font-extrabold text-center text-gray-200">
+                  Guess The Language!
+                </h1>
                 <div>
                   {!isLoading ? (
                     <div className="block max-w-lg max-h-96 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -148,8 +156,9 @@ const Home = () => {
                               answerLanguage.language_name
                               ? "bg-green-500" // Green if correct answer
                               : "bg-red-500" // Red if incorrect answer
-                            : 
-                            isQuestionAnswered && optionChoices[index] === answerLanguage.language_name
+                            : isQuestionAnswered &&
+                              optionChoices[index] ===
+                                answerLanguage.language_name
                             ? "bg-green-500"
                             : ""
                         }`}
@@ -185,7 +194,7 @@ const Home = () => {
         ) : (
           // end page
           <div className="w-4/5 min-h-[75%] shadow-2xl flex flex-col justify-center items-center font-medium gap-16">
-            <h1>Hurray, you finished the game!</h1>
+            <h1>{endMessage()}</h1>
             <h1 className="text-2xl">
               Your score is {totalScore} out of {questionLength}
             </h1>
@@ -214,13 +223,11 @@ const Home = () => {
               <Link href="/quiz-wiki">
                 <button
                   className="text-white bg-gradient-to-r from-red-600 via-red-700 to-red-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                  onClick={() =>{
-
+                  onClick={() => {
                     setQuizEnded(false);
                     setQuestionNumber(0);
                     setTotalScore(0);
-                  }
-                  }
+                  }}
                 >
                   Play Again
                 </button>
