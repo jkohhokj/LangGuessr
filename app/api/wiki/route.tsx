@@ -36,9 +36,9 @@ export async function GET(request: Request) {
     return str.replace(/[\r\t\n=]+/g, "=").replace(/=+/g, "=");
   };
   extract = await removeSpecialCharacters(extract);
-  const truncateString = (str: string, maxLength: number) => {
-    return str.length > maxLength ? str.substring(0, maxLength) + "..." : str;
-  };
+  // const truncateString = (str: string, maxLength: number) => {
+  //   return str.length > maxLength ? str.substring(0, maxLength) + "..." : str;
+  // };
   // extract = await truncateString(extract, 1000);
 
   return NextResponse.json(extract);
