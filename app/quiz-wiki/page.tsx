@@ -9,9 +9,9 @@ interface Language {
   language_name: string;
 }
 
-const japanese: Language = {
-  language_code: "ja",
-  language_name: "Japanese",
+const default_lang: Language = {
+  language_code: "default_lang",
+  language_name: "Default Language",
 };
 
 const getRandomChoices = (lang: Language) => {
@@ -44,7 +44,7 @@ const Home = () => {
   const [questionNumber, setQuestionNumber] = useState(-1);
   const [totalScore, setTotalScore] = useState(0);
   const [optionChoices, setOptionChoices] = useState<string[]>([]);
-  const [answerLanguage, setAnswerLanguage] = useState(japanese);
+  const [answerLanguage, setAnswerLanguage] = useState(default_lang);
   const [isLoading, setIsLoading] = useState<boolean>(true); // buffering state when API is slow
   const [str, setStr] = useState(`gay`);
   const [selectedChoiceIndex, setSelectedChoiceIndex] = useState(0);
@@ -121,14 +121,15 @@ const Home = () => {
                 </div>
                 <div>
                   {!isLoading ? (
-                    <div>
-                      
+                    <div className="block max-w-lg max-h-96 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                      <div className="whitespace-normal truncate overflow-ellipse max-h-72">
                       {str.split("=").map((line, index) => (
                         <p key={index}>
                           {line}
                           <br />
                         </p>
                       ))}
+                      </div>
                     </div>
                   ) : (
                     <div>Loading...</div>

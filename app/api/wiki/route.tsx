@@ -39,7 +39,7 @@ export async function GET(request: Request) {
   const truncateString = (str: string, maxLength: number) => {
     return str.length > maxLength ? str.substring(0, maxLength) + "..." : str;
   };
-  extract = await truncateString(extract, 1000);
+  // extract = await truncateString(extract, 1000);
 
   return NextResponse.json(extract);
 }
