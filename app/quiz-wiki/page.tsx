@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { getRandomWikiLanguage } from "@/app/languages";
-
 interface Language {
   language_code: string;
   language_name: string;
@@ -36,7 +35,6 @@ const getRandomChoices = (lang: Language) => {
   return optionChoices;
 };
 
-
 const Home = () => {
   const [isQuestionAnswered, setIsQuestionAnswered] = useState(false);
   const [quizEnded, setQuizEnded] = useState(false);
@@ -51,7 +49,7 @@ const Home = () => {
 
   // initialize on page load
   useEffect(() => {
-    setQuestionLength(3); // number of questions
+    setQuestionLength(5); // number of questions
     setQuestionNumber(0);
   }, []);
 
@@ -99,43 +97,47 @@ const Home = () => {
   };
 
   return (
-    <>
-      <div className="h-screen w-full flex justify-center items-center">
-        <title>LangGuessr: Guess The Language</title>
+    <div>
+      <div className="min-h-screen w-full flex justify-center items-center">
         {!quizEnded ? ( // quiz page
           <>
-            <div className="h-screen w-full flex justify-center items-center ">
-              <div className="w-4/5 h-3/4 shadow-2xl flex flex-col justify-center items-center font-medium gap-16 ">
-                <div>
-                  <h1>Guess The Language!</h1>
-                  <h3>Current Score</h3>
-                  {isQuestionAnswered ? (
-                    <>
-                      {totalScore}/{questionNumber + 1}
-                    </>
-                  ) : (
-                    <>
-                      {totalScore}/{questionNumber}
-                    </>
-                  )}
-                </div>
+            <div className=" w-64 bg-gray-800 text-white p-4">
+              <h2 className="flex justify-center text-lg font-semibold">
+                Score:
+              </h2>
+
+              <div className="flex justify-center py-2">
+                {isQuestionAnswered ? (
+                  <>
+                    {totalScore}/{questionNumber + 1}
+                  </>
+                ) : (
+                  <>
+                    {totalScore}/{questionNumber}
+                  </>
+                )}
+              </div>
+            </div>
+            <div className="h-screen w-full flex justify-center items-center">
+              <div className="w-4/5 h-3/4 shadow-2xl flex flex-col justify-center items-center font-medium gap-16">
+                  <h1 className="text-6xl font-extrabold text-center text-gray-200">Guess The Language!</h1>
                 <div>
                   {!isLoading ? (
                     <div className="block max-w-lg max-h-96 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                       <div className="whitespace-normal truncate overflow-ellipse max-h-72">
-                      {str.split("=").map((line, index) => (
-                        <p key={index}>
-                          {line}
-                          <br />
-                        </p>
-                      ))}
+                        {str.split("=").map((line, index) => (
+                          <p key={index}>
+                            {line}
+                            <br />
+                          </p>
+                        ))}
                       </div>
                     </div>
                   ) : (
                     <div>Loading...</div>
                   )}
                 </div>
-                <div className=" grid grid-cols-2 gap-8 gap-x-12 ">
+                <div className=" grid grid-cols-3 gap-8 gap-x-12 ">
                   {optionChoices.map((lang, index) => {
                     return (
                       <button
@@ -146,6 +148,9 @@ const Home = () => {
                               answerLanguage.language_name
                               ? "bg-green-500" // Green if correct answer
                               : "bg-red-500" // Red if incorrect answer
+                            : 
+                            isQuestionAnswered && optionChoices[index] === answerLanguage.language_name
+                            ? "bg-green-500"
                             : ""
                         }`}
                         onClick={() => {
@@ -159,8 +164,6 @@ const Home = () => {
                 </div>
                 {isQuestionAnswered ? (
                   <div>
-                    <p>You chose {optionChoices[selectedChoiceIndex]}</p>
-                    <p>Correct Answer is {answerLanguage.language_name}</p>
                     <button
                       className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
                       onClick={() => {
@@ -199,15 +202,34 @@ const Home = () => {
                   setIsQuestionAnswered(false);
                 }}
               >
-                NextQuestion
+                End Game
               </button>
             ) : null}
+            <div className="flex flex-row space-x-8">
+              <Link href="/">
+                <button className=" text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">
+                  Return to Home
+                </button>
+              </Link>
+              <Link href="/quiz-wiki">
+                <button
+                  className="text-white bg-gradient-to-r from-red-600 via-red-700 to-red-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                  onClick={() =>{
 
-            <Link href="/">Return to Home</Link>
+                    setQuizEnded(false);
+                    setQuestionNumber(0);
+                    setTotalScore(0);
+                  }
+                  }
+                >
+                  Play Again
+                </button>
+              </Link>
+            </div>
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
