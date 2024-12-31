@@ -19,7 +19,7 @@ const Home = () => {
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-700 font-semibold"
                 >
-                  Beginner's Article
+                  Beginner&apos;s Article
                 </a>
               </li>
               <li>
