@@ -1,55 +1,84 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { getRandomWikiLanguage } from "./languages";
 
-const Home = async () => {
+const Home = () => {
   interface Language {
     language_code: string;
     language_name: string;
   }
-
-  const fetchData = async (lang: Language) => {
-    try {
-      // const baseUrl =
-        // process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-      const response = await fetch(
-        `/api/wiki?language_code=${lang.language_code}`
-      );
-      return response.text();
-    } catch {
-      return "gay";
-    }
+  const japanese: Language = {
+    language_code: "ja",
+    language_name: "Japanese",
   };
-  async function getServerSideProps() {
-    const demoLanguage = await getRandomWikiLanguage();
-    const data = await fetchData(demoLanguage);
 
-    return { props: { demoLanguage, data } };
-  }
-  const props = getServerSideProps();
+  const [answerLanguage, setAnswerLanguage] = useState(japanese);
+  const [isLoading, setIsLoading] = useState<boolean>(true); // buffering state when API is slow
+  const [str, setStr] = useState(`gay`);
+
+  useEffect(() => {
+    setAnswerLanguage(getRandomWikiLanguage());
+  }, []);
+
+  // change answer choices when answerLanguage changes
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setIsLoading(true);
+        const response = await fetch(
+          `/api/wiki?language_code=${answerLanguage.language_code}`
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        setStr(await response.text());
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    if (answerLanguage.language_code !== "ja") {
+      fetchData();
+    }
+  }, [answerLanguage]);
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div>
-          <h1 className="text-6xl font-extrabold leading-9 tracking-tight text-gray-300 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="flex justify-center text-6xl font-extrabold leading-9 tracking-tight text-gray-300 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             LangGuessr: Guess The Language
           </h1>
         </div>
-        <div className="max-w-5xl">
-        <div className="flex justify-center">
-          
-          {(await props).props.demoLanguage.language_name}
-        </div>
-          <br />
-          <br />
-          {(await props).props.data}
-        </div>
+        <div className="max-w-screen-lg">
+          {!isLoading ? (
+            <div>
+              <h1 className="flex justify-center text-3xl font-extrabold leading-9 tracking-tight text-blue-300 dark:text-blue-100">
+                {answerLanguage.language_name}
+                :&nbsp;
+                {answerLanguage.language_code}
+              </h1>
+              <br/>
+              {str.split("=").map((line, index) => (
+                <p key={index}>
+                  {line}
+                  <br />
+                </p>
+              ))}
+            </div>
+          ) : (
+            <div>Loading...</div>
+          )}
+          <br/>
         <div className="flex justify-center">
           <Link href={`/quiz-wiki`}>
-            <button className="flex justify-center animate-grow-shrink text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">
+            <button className="animate-grow-shrink text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">
               Play the game!
             </button>
           </Link>
+        </div>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
