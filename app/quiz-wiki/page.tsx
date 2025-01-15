@@ -97,8 +97,8 @@ const Home = () => {
   };
 
   const endMessage = () => {
-    if (totalScore == questionNumber) return "Wow! You're literally perfect";
-    else if (totalScore > questionNumber / 2) return "Not bad...";
+    if (totalScore == questionLength) return "Wow! You're literally perfect";
+    else if (totalScore > questionLength / 2) return "Not bad...";
     else return "You failed.";
   };
 
@@ -155,7 +155,7 @@ const Home = () => {
                             ? optionChoices[selectedChoiceIndex] ===
                               answerLanguage.language_name
                               ? "bg-green-500 hover:bg-green-700" // Green if correct answer
-                              : "bg-red-500 hover:bg-green-700" // Red if incorrect answer
+                              : "bg-red-500 hover:bg-red-700" // Red if incorrect answer
                             : isQuestionAnswered &&
                               optionChoices[index] ===
                                 answerLanguage.language_name
@@ -184,7 +184,7 @@ const Home = () => {
                         setIsQuestionAnswered(false);
                       }}
                     >
-                      NextQuestion
+                      Next Question
                     </button>
                   </div>
                 ) : null}
