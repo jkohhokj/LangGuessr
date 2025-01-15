@@ -154,12 +154,12 @@ const Home = () => {
                           isQuestionAnswered && selectedChoiceIndex === index
                             ? optionChoices[selectedChoiceIndex] ===
                               answerLanguage.language_name
-                              ? "bg-green-500" // Green if correct answer
-                              : "bg-red-500" // Red if incorrect answer
+                              ? "bg-green-500 hover:bg-green-700" // Green if correct answer
+                              : "bg-red-500 hover:bg-green-700" // Red if incorrect answer
                             : isQuestionAnswered &&
                               optionChoices[index] ===
                                 answerLanguage.language_name
-                            ? "bg-green-500"
+                            ? "bg-green-500 hover:bg-green-700"
                             : ""
                         }`}
                         onClick={() => {
