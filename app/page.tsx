@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { getRandomWikiLanguage } from "./languages";
+import { User, Code, FileUser } from "lucide-react";
 
 const Home = () => {
   interface Language {
@@ -16,7 +16,7 @@ const Home = () => {
 
   const [answerLanguage, setAnswerLanguage] = useState(default_lang);
   const [isLoading, setIsLoading] = useState<boolean>(true); // buffering state when API is slow
-  const [str, setStr] = useState(`gay`);
+  const [str, setStr] = useState(`changeMe`);
 
   useEffect(() => {
     setAnswerLanguage(getRandomWikiLanguage());
@@ -31,7 +31,7 @@ const Home = () => {
           `/api/wiki?language_code=${answerLanguage.language_code}`
         );
         if (!response.ok) {
-          // throw new Error("Failed to fetch data");
+          throw new Error("Failed to fetch data");
         }
         setStr(await response.text());
       } catch (error) {
@@ -40,7 +40,7 @@ const Home = () => {
         setIsLoading(false);
       }
     };
-    if (answerLanguage.language_code !== "ja") {
+    if (answerLanguage.language_code !== "default_lang") {
       fetchData();
     }
   }, [answerLanguage]);
@@ -53,9 +53,30 @@ const Home = () => {
           </h1>
         </div>
         <div className="max-w-screen-lg">
+          <div className="">
+            This isn&apos;t just another language guessing game. LangGuessr
+            pulls
+            <span className="font-bold"> real, human-written </span>text from
+            over 200 randomly selected Wikipedia articles— no AI-generated
+            content, just authentic language.
+            <br />
+            <br />
+            Each prompt is unique and natural, offering a genuine challenge that
+            helps you experience the richness and diversity of world languages
+            as they&apos;re actually used. This is not just any random language
+            generated game, LangGuessr pulls randomly selected text from over
+            200 Wikipedia articles in their native domain. Not only will every
+            prompt be unique, but they will be free from computer-generated
+            features and translations. This is achieved by selecting the highest
+            quality text to have the most authentic, global natural language
+            experience.
+          </div>
+          <br />
+          <br />
+          <br />
           {!isLoading ? (
             <div className="">
-              <h1 className="flex justify-center text-3xl font-extrabold leading-9 tracking-tight text-blue-300 dark:text-blue-100">
+              <h1 className="flex self-center justify-center text-3xl font-extrabold leading-9 tracking-tight text-blue-300 dark:text-blue-100">
                 {answerLanguage.language_name}
                 :&nbsp;
                 {answerLanguage.language_code}
@@ -63,7 +84,7 @@ const Home = () => {
               <br />
               <div className="block max-w-screen-lg max-h-96 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div className="whitespace-normal truncate overflow-ellipse max-h-72">
-                  {str.split("=").map((line, index) => (
+                  {str.split("=").map((line : string, index : number) => (
                     <p key={index}>
                       {line}
                       <br />
@@ -92,13 +113,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
+          <User color="white" size={36} />
           About Me
         </a>
         <a
@@ -107,13 +122,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
+          <Code color="white" size={36} />
           Source Code
         </a>
         <a
@@ -122,13 +131,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
+          <FileUser color="white" size={36} />
           Resources
         </a>
       </footer>
