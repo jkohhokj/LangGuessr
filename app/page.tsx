@@ -57,19 +57,18 @@ const Home = () => {
             This isn&apos;t just another language guessing game. LangGuessr
             pulls
             <span className="font-bold"> real, human-written </span>text from
-            over 200 randomly selected Wikipedia articles— no AI-generated
+            over 200 randomly selected Wikipedia articles - no AI-generated
             content, just authentic language.
             <br />
             <br />
             Each prompt is unique and natural, offering a genuine challenge that
             helps you experience the richness and diversity of world languages
-            as they&apos;re actually used. This is not just any random language
-            generated game, LangGuessr pulls randomly selected text from over
-            200 Wikipedia articles in their native domain. Not only will every
-            prompt be unique, but they will be free from computer-generated
-            features and translations. This is achieved by selecting the highest
-            quality text to have the most authentic, global natural language
-            experience.
+            as they are actually used. This is not just a random language
+            generator; LangGuessr pulls text from Wikipedia articles
+            <span className="font-bold"> in their native domain</span>. Not only
+            will every prompt be unique, but they will be free from
+            computer-generated features and translations, achieving the most
+            authentic, global natural language guessing experience.
           </div>
           <br />
           <br />
@@ -84,7 +83,7 @@ const Home = () => {
               <br />
               <div className="block max-w-screen-lg max-h-96 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div className="whitespace-normal truncate overflow-ellipse max-h-72">
-                  {str.split("=").map((line : string, index : number) => (
+                  {str.split("=").map((line: string, index: number) => (
                     <p key={index}>
                       {line}
                       <br />
